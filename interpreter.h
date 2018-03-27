@@ -12,14 +12,13 @@ namespace async
   class interpreter : public common::interface<interpreter>
   {
     public:
-      interpreter(mt::command_processor::ref commands_processor);
-      void process_cmd(const std::string &cmd);
-      void forced_dump();
+      interpreter(mt::command_processor::ref a_commands_processor);
+      void process_cmd(const std::string &a_cmd);
 
     private:
       void process_open_bracket();
       void process_close_bracket();
-      void process_simple_cmd(const std::string &cmd);
+      void process_simple_cmd(const std::string &a_cmd);
 
     private:
       int m_open_brackets_count = 0;

@@ -19,6 +19,5 @@ namespace async
       common::tcp::iserver::ref m_server;
       std::map<int, interpreter::ref> m_contexts;
       mt::command_processor::ref m_command_processor;
-      boost::asio::deadline_timer m_last_client_disconnected_timer;
   };
 } //namespace async

@@ -6,10 +6,9 @@ namespace async
     : m_strand(a_strand)
     , m_server(common::tcp::create_server(a_port, a_strand))
     , m_command_processor(std::make_shared<mt::command_processor>(a_bulk_size, a_file_loggers_count))
-    , m_last_client_disconnected_timer(m_strand.get_io_service(), boost::posix_time::milliseconds(1000))
   {
     m_server->set_on_connected([this, &a_bulk_size](auto client_id){
-      m_contexts.insert(std::make_pair<int, interpreter::ref>(std::move(client_id), std::make_shared<interpreter>(m_command_processor)));
+      m_contexts.insert(std::make_pair(std::move(client_id), std::make_shared<interpreter>(m_command_processor)));
       //std::cout << "client connected" << std::endl;
     });
 

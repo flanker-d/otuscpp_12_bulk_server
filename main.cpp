@@ -11,7 +11,9 @@ int main(int argc, char **argv)
     int port = std::stoi(argv[1]);
     int bulk_size = std::stoi(argv[2]);
 
-    async::bulk_server server(strand, port, bulk_size, 2);
+    int file_loggers_count = 2;
+
+    async::bulk_server server(strand, port, bulk_size, file_loggers_count);
 
     boost::thread_group thread_group;
     //int threads_count = boost::thread::hardware_concurrency();
@@ -25,6 +27,8 @@ int main(int argc, char **argv)
 
     thread_group.join_all();
   }
+  else
+    std::cout << "usage: bulk_server <port> <bulk_size>" << std::endl;
 
   return 0;
 }
