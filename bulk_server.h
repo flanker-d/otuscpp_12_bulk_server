@@ -15,9 +15,6 @@ namespace async
       ~bulk_server();
 
     private:
-      boost::asio::io_service &m_io_service;
-      boost::asio::io_service::strand m_strand;
-      common::tcp_server_params_t& m_params;
       common::tcp::iserver::ref m_server;
       std::map<int, interpreter::ref> m_contexts;
       mt::command_processor::ref m_command_processor;
