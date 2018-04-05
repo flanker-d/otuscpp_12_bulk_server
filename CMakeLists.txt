@@ -7,12 +7,11 @@ include_directories(${PROJECT_SOURCE_DIR})
 configure_file(version.h.in version.h)
 
 add_library(bulk_server_common
-        common/communications.h
-        common/interface.h
-        common/tcp/client_session.cpp
-        common/tcp/server.cpp)
+        common/interface/interface.h
+        common/communications/communications.h
+        common/communications/tcp/impl/client_session.cpp
+        common/communications/tcp/impl/server.cpp)
 target_link_libraries(bulk_server_common -lboost_system)
-target_link_libraries(bulk_server_common -lboost_thread)
 
 add_library(bulk_server_mt
         mt/commands_storage.cpp

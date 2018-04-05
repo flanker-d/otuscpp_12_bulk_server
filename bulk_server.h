@@ -1,6 +1,6 @@
 #pragma once
 
-#include <common/communications.h>
+#include <common/communications/communications.h>
 #include <mt/command_processor.h>
 #include <interpreter.h>
 #include <iostream>
@@ -11,11 +11,13 @@ namespace async
   class bulk_server
   {
     public:
-      bulk_server(boost::asio::io_service::strand &a_strand, const int a_port, const int a_bulk_size, const int a_file_loggers_count);
+      bulk_server(boost::asio::io_service &a_io_service, const int a_port, const int a_bulk_size, const int a_file_loggers_count, common::tcp_server_params_t& a_params);
       ~bulk_server();
 
     private:
-      boost::asio::io_service::strand &m_strand;
+      boost::asio::io_service &m_io_service;
+      boost::asio::io_service::strand m_strand;
+      common::tcp_server_params_t& m_params;
       common::tcp::iserver::ref m_server;
       std::map<int, interpreter::ref> m_contexts;
       mt::command_processor::ref m_command_processor;

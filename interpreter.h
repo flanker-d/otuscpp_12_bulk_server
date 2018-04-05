@@ -2,7 +2,7 @@
 
 #include <mt/commands_storage.h>
 #include <mt/command_processor.h>
-#include <common/interface.h>
+#include <common/interface/interface.h>
 #include <memory>
 #include <vector>
 #include <iostream>

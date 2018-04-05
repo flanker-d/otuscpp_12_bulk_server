@@ -1,6 +1,6 @@
 #pragma once
 
-#include <common/interface.h>
+#include <common/interface/interface.h>
 #include <mt/file_logger.h>
 #include <mt/console_logger.h>
 #include <mt/commands_storage.h>
