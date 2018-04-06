@@ -43,7 +43,7 @@ namespace mt
       m_queue.pop();
       lk.unlock();
 
-      std::cout << "bulk: " << cmd_pipeline.block << std::endl;
+      //std::cout << "bulk: " << cmd_pipeline.block << std::endl;
     }
   }
 

@@ -29,6 +29,8 @@ namespace async
       {
         found->second->process_cmd({a_data, a_len});
       }
+      else
+        std::cout << "context not found" << std::endl;
     });
 
     m_server->run();
