@@ -18,8 +18,7 @@ int main(int argc, char **argv)
     async::bulk_server server(io_service, port, bulk_size, file_loggers_count, params);
     //io_service.run();
     std::vector<std::thread> thread_group;
-    //int threads_count = std::thread::hardware_concurrency();
-    int threads_count = 8;
+    int threads_count = std::thread::hardware_concurrency();
     for(int i = 0; i < threads_count; i++)
     {
       thread_group.emplace_back(std::thread([&io_service](){
