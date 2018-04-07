@@ -1,0 +1,335 @@
+I. READ ONLY OPERATIONS
+
+1. custom_eol
+
+1 thread
+
+strand off
+10728 ms. readed: 100000 msgs with 1 threads
+10732 ms. readed: 100000 msgs with 1 threads
+10734 ms. readed: 100000 msgs with 1 threads
+10734 ms. readed: 100000 msgs with 1 threads
+10733 ms. readed: 100000 msgs with 1 threads
+10735 ms. readed: 100000 msgs with 1 threads
+10735 ms. readed: 100000 msgs with 1 threads
+10732 ms. readed: 100000 msgs with 1 threads
+10726 ms. readed: 100000 msgs with 1 threads
+10913 ms. readed: 100000 msgs with 1 threads
+
+strand on
+15034 ms. readed: 100000 msgs with 1 threads
+15036 ms. readed: 100000 msgs with 1 threads
+15036 ms. readed: 100000 msgs with 1 threads
+15027 ms. readed: 100000 msgs with 1 threads
+15028 ms. readed: 100000 msgs with 1 threads
+15015 ms. readed: 100000 msgs with 1 threads
+15015 ms. readed: 100000 msgs with 1 threads
+15013 ms. readed: 100000 msgs with 1 threads
+15011 ms. readed: 100000 msgs with 1 threads
+15271 ms. readed: 100000 msgs with 1 threads
+
+2 threads
+
+strand off
+6342 ms. readed: 100000 msgs with 2 threads
+6347 ms. readed: 100000 msgs with 2 threads
+6347 ms. readed: 100000 msgs with 2 threads
+6352 ms. readed: 100000 msgs with 2 threads
+6353 ms. readed: 100000 msgs with 2 threads
+6355 ms. readed: 100000 msgs with 2 threads
+6341 ms. readed: 100000 msgs with 2 threads
+6343 ms. readed: 100000 msgs with 2 threads
+6344 ms. readed: 100000 msgs with 2 threads
+6507 ms. readed: 100000 msgs with 2 threads
+
+strand on
+8556 ms. readed: 100000 msgs with 2 threads
+8559 ms. readed: 100000 msgs with 2 threads
+8561 ms. readed: 100000 msgs with 2 threads
+8562 ms. readed: 100000 msgs with 2 threads
+8560 ms. readed: 100000 msgs with 2 threads
+8562 ms. readed: 100000 msgs with 2 threads
+8561 ms. readed: 100000 msgs with 2 threads
+8563 ms. readed: 100000 msgs with 2 threads
+8556 ms. readed: 100000 msgs with 2 threads
+8768 ms. readed: 100000 msgs with 2 threads
+
+4 threads
+
+strand off
+4595 ms. readed: 100000 msgs with 4 threads
+4598 ms. readed: 100000 msgs with 4 threads
+4599 ms. readed: 100000 msgs with 4 threads
+4598 ms. readed: 100000 msgs with 4 threads
+4602 ms. readed: 100000 msgs with 4 threads
+4587 ms. readed: 100000 msgs with 4 threads
+4611 ms. readed: 100000 msgs with 4 threads
+4594 ms. readed: 100000 msgs with 4 threads
+4610 ms. readed: 100000 msgs with 4 threads
+4750 ms. readed: 100000 msgs with 4 threads
+
+strand on
+5694 ms. readed: 100000 msgs with 4 threads
+5695 ms. readed: 100000 msgs with 4 threads
+5698 ms. readed: 100000 msgs with 4 threads
+5698 ms. readed: 100000 msgs with 4 threads
+5683 ms. readed: 100000 msgs with 4 threads
+5717 ms. readed: 100000 msgs with 4 threads
+5684 ms. readed: 100000 msgs with 4 threads
+5687 ms. readed: 100000 msgs with 4 threads
+5709 ms. readed: 100000 msgs with 4 threads
+5881 ms. readed: 100000 msgs with 4 threads
+
+
+2. read_until_eol
+
+1 thread
+
+strand off
+1360 ms. readed: 100000 msgs with 1 threads
+1363 ms. readed: 100000 msgs with 1 threads
+1368 ms. readed: 100000 msgs with 1 threads
+1368 ms. readed: 100000 msgs with 1 threads
+1376 ms. readed: 100000 msgs with 1 threads
+1378 ms. readed: 100000 msgs with 1 threads
+1366 ms. readed: 100000 msgs with 1 threads
+1368 ms. readed: 100000 msgs with 1 threads
+1366 ms. readed: 100000 msgs with 1 threads
+1365 ms. readed: 100000 msgs with 1 threads
+
+strand on
+2053 ms. readed: 100000 msgs with 1 threads
+2061 ms. readed: 100000 msgs with 1 threads
+2064 ms. readed: 100000 msgs with 1 threads
+2063 ms. readed: 100000 msgs with 1 threads
+2066 ms. readed: 100000 msgs with 1 threads
+2066 ms. readed: 100000 msgs with 1 threads
+2060 ms. readed: 100000 msgs with 1 threads
+2059 ms. readed: 100000 msgs with 1 threads
+2059 ms. readed: 100000 msgs with 1 threads
+2069 ms. readed: 100000 msgs with 1 threads
+
+2 threads
+
+strand off
+785 ms. readed: 100000 msgs with 2 threads
+788 ms. readed: 100000 msgs with 2 threads
+792 ms. readed: 100000 msgs with 2 threads
+793 ms. readed: 100000 msgs with 2 threads
+793 ms. readed: 100000 msgs with 2 threads
+792 ms. readed: 100000 msgs with 2 threads
+791 ms. readed: 100000 msgs with 2 threads
+790 ms. readed: 100000 msgs with 2 threads
+802 ms. readed: 100000 msgs with 2 threads
+800 ms. readed: 100000 msgs with 2 threads
+
+strand on
+1138 ms. readed: 100000 msgs with 2 threads
+1144 ms. readed: 100000 msgs with 2 threads
+1153 ms. readed: 100000 msgs with 2 threads
+1147 ms. readed: 100000 msgs with 2 threads
+1147 ms. readed: 100000 msgs with 2 threads
+1158 ms. readed: 100000 msgs with 2 threads
+1148 ms. readed: 100000 msgs with 2 threads
+1146 ms. readed: 100000 msgs with 2 threads
+1150 ms. readed: 100000 msgs with 2 threads
+1155 ms. readed: 100000 msgs with 2 threads
+
+4 threads
+
+strand off
+727 ms. readed: 100000 msgs with 4 threads
+735 ms. readed: 100000 msgs with 4 threads
+734 ms. readed: 100000 msgs with 4 threads
+732 ms. readed: 100000 msgs with 4 threads
+729 ms. readed: 100000 msgs with 4 threads
+733 ms. readed: 100000 msgs with 4 threads
+738 ms. readed: 100000 msgs with 4 threads
+742 ms. readed: 100000 msgs with 4 threads
+734 ms. readed: 100000 msgs with 4 threads
+741 ms. readed: 100000 msgs with 4 threads
+
+strand on
+812 ms. readed: 100000 msgs with 4 threads
+814 ms. readed: 100000 msgs with 4 threads
+818 ms. readed: 100000 msgs with 4 threads
+821 ms. readed: 100000 msgs with 4 threads
+812 ms. readed: 100000 msgs with 4 threads
+809 ms. readed: 100000 msgs with 4 threads
+820 ms. readed: 100000 msgs with 4 threads
+824 ms. readed: 100000 msgs with 4 threads
+808 ms. readed: 100000 msgs with 4 threads
+821 ms. readed: 100000 msgs with 4 threads
+
+
+3. read_some_eol
+
+1 thread
+
+strand off
+384 ms. readed: 100000 msgs with 1 threads
+402 ms. readed: 100000 msgs with 1 threads
+409 ms. readed: 100000 msgs with 1 threads
+410 ms. readed: 100000 msgs with 1 threads
+428 ms. readed: 100000 msgs with 1 threads
+409 ms. readed: 100000 msgs with 1 threads
+395 ms. readed: 100000 msgs with 1 threads
+381 ms. readed: 100000 msgs with 1 threads
+413 ms. readed: 100000 msgs with 1 threads
+363 ms. readed: 100000 msgs with 1 threads
+
+strand on
+375 ms. readed: 100000 msgs with 1 threads
+398 ms. readed: 100000 msgs with 1 threads
+415 ms. readed: 100000 msgs with 1 threads
+410 ms. readed: 100000 msgs with 1 threads
+407 ms. readed: 100000 msgs with 1 threads
+403 ms. readed: 100000 msgs with 1 threads
+381 ms. readed: 100000 msgs with 1 threads
+365 ms. readed: 100000 msgs with 1 threads
+396 ms. readed: 100000 msgs with 1 threads
+347 ms. readed: 100000 msgs with 1 threads
+
+2 threads
+
+strand off
+247 ms. readed: 100000 msgs with 2 threads
+250 ms. readed: 100000 msgs with 2 threads
+264 ms. readed: 100000 msgs with 2 threads
+231 ms. readed: 100000 msgs with 2 threads
+260 ms. readed: 100000 msgs with 2 threads
+226 ms. readed: 100000 msgs with 2 threads
+220 ms. readed: 100000 msgs with 2 threads
+212 ms. readed: 100000 msgs with 2 threads
+244 ms. readed: 100000 msgs with 2 threads
+207 ms. readed: 100000 msgs with 2 threads
+
+strand on
+252 ms. readed: 100000 msgs with 2 threads
+258 ms. readed: 100000 msgs with 2 threads
+253 ms. readed: 100000 msgs with 2 threads
+259 ms. readed: 100000 msgs with 2 threads
+265 ms. readed: 100000 msgs with 2 threads
+248 ms. readed: 100000 msgs with 2 threads
+228 ms. readed: 100000 msgs with 2 threads
+213 ms. readed: 100000 msgs with 2 threads
+197 ms. readed: 100000 msgs with 2 threads
+242 ms. readed: 100000 msgs with 2 threads
+
+4 threads
+
+strand off
+189 ms. readed: 100000 msgs with 4 threads
+203 ms. readed: 100000 msgs with 4 threads
+200 ms. readed: 100000 msgs with 4 threads
+198 ms. readed: 100000 msgs with 4 threads
+197 ms. readed: 100000 msgs with 4 threads
+203 ms. readed: 100000 msgs with 4 threads
+216 ms. readed: 100000 msgs with 4 threads
+196 ms. readed: 100000 msgs with 4 threads
+193 ms. readed: 100000 msgs with 3 threads
+222 ms. readed: 100000 msgs with 4 threads
+
+strand on
+209 ms. readed: 100000 msgs with 4 threads
+219 ms. readed: 100000 msgs with 4 threads
+216 ms. readed: 100000 msgs with 4 threads
+214 ms. readed: 100000 msgs with 4 threads
+207 ms. readed: 100000 msgs with 4 threads
+204 ms. readed: 100000 msgs with 4 threads
+216 ms. readed: 100000 msgs with 4 threads
+217 ms. readed: 100000 msgs with 4 threads
+189 ms. readed: 100000 msgs with 4 threads
+196 ms. readed: 100000 msgs with 4 threads
+
+
+II. READ AND WRITE OPERATIONS
+
+1. custom_eol
+
+1 thread
+
+strand on
+14586 ms. readed: 100000 msgs with 1 threads
+14588 ms. readed: 100000 msgs with 1 threads
+14593 ms. readed: 100000 msgs with 1 threads
+14593 ms. readed: 100000 msgs with 1 threads
+14593 ms. readed: 100000 msgs with 1 threads
+14600 ms. readed: 100000 msgs with 1 threads
+14599 ms. readed: 100000 msgs with 1 threads
+14590 ms. readed: 100000 msgs with 1 threads
+14589 ms. readed: 100000 msgs with 1 threads
+14839 ms. readed: 100000 msgs with 1 threads
+
+4 threads
+
+strand on
+9882 ms. readed: 100000 msgs with 4 threads
+9880 ms. readed: 100000 msgs with 4 threads
+9944 ms. readed: 100000 msgs with 4 threads
+9941 ms. readed: 100000 msgs with 4 threads
+9928 ms. readed: 100000 msgs with 4 threads
+9951 ms. readed: 100000 msgs with 4 threads
+9963 ms. readed: 100000 msgs with 4 threads
+9978 ms. readed: 100000 msgs with 4 threads
+9994 ms. readed: 100000 msgs with 4 threads
+10205 ms. readed: 100000 msgs with 4 threads
+
+2. read_until_eol
+
+1 thread
+
+4396 ms. readed: 100000 msgs with 1 threads
+4412 ms. readed: 100000 msgs with 1 threads
+4413 ms. readed: 100000 msgs with 1 threads
+4418 ms. readed: 100000 msgs with 1 threads
+4420 ms. readed: 100000 msgs with 1 threads
+4410 ms. readed: 100000 msgs with 1 threads
+4409 ms. readed: 100000 msgs with 1 threads
+4409 ms. readed: 100000 msgs with 1 threads
+4405 ms. readed: 100000 msgs with 1 threads
+4402 ms. readed: 100000 msgs with 1 threads
+
+4 threads
+
+strand on
+3214 ms. readed: 100000 msgs with 4 threads
+3246 ms. readed: 100000 msgs with 4 threads
+3232 ms. readed: 100000 msgs with 4 threads
+3244 ms. readed: 100000 msgs with 4 threads
+3257 ms. readed: 100000 msgs with 4 threads
+3278 ms. readed: 100000 msgs with 4 threads
+3282 ms. readed: 100000 msgs with 4 threads
+3274 ms. readed: 100000 msgs with 4 threads
+3277 ms. readed: 100000 msgs with 4 threads
+3287 ms. readed: 100000 msgs with 4 threads
+
+3. read_some_eol
+
+1 thread
+
+strand off
+2412 ms. readed: 100000 msgs with 1 threads
+2467 ms. readed: 100000 msgs with 1 threads
+2560 ms. readed: 100000 msgs with 1 threads
+2633 ms. readed: 100000 msgs with 1 threads
+2620 ms. readed: 100000 msgs with 1 threads
+2806 ms. readed: 100000 msgs with 1 threads
+2588 ms. readed: 100000 msgs with 1 threads
+2511 ms. readed: 100000 msgs with 1 threads
+2434 ms. readed: 100000 msgs with 1 threads
+2264 ms. readed: 100000 msgs with 1 threads
+
+4 threads
+
+strand on
+2018 ms. readed: 100000 msgs with 4 threads
+2030 ms. readed: 100000 msgs with 3 threads
+2102 ms. readed: 100000 msgs with 4 threads
+2131 ms. readed: 100000 msgs with 4 threads
+2194 ms. readed: 100000 msgs with 4 threads
+2190 ms. readed: 100000 msgs with 4 threads
+2202 ms. readed: 100000 msgs with 4 threads
+2167 ms. readed: 100000 msgs with 4 threads
+2251 ms. readed: 100000 msgs with 4 threads
+2204 ms. readed: 100000 msgs with 4 threads
